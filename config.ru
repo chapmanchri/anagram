@@ -1,6 +1,6 @@
 require 'sinatra/base'
 require 'sinatra'
-configure { set :server, :puma }
+require 'rack'
 require 'rake'
 
 require ::File.expand_path('../app',  __FILE__)
