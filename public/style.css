@@ -1,0 +1,54 @@
+body {
+	background:#f8f8f8;
+	background:url('images/pattern.png');
+	font-family:'montserrat', arial;
+}
+
+h1 {
+    color: red;
+	margin: 20px;
+	font-weight: 900;
+	font-style: italic;
+}
+
+h2 {
+    color: red;
+	margin: 20px;
+	font-weight: 500;
+}
+
+p {
+    color: gray;
+	margin: 20px;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.btn {
+  background: #d9344a;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: 0px;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+.form-box {
+	margin: 20px;
+}
+.form-space {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.page-bottom {
+	background:url('images/pattern2.png');
+	height: 1000px;
+	width: 100%;
+/*	background: purple;*/
+}
