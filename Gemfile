@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 # gem 'activerecord'
 gem 'pg'
 #
-# gem 'rspec'
+gem 'rspec'
 #
 gem 'sinatra'
 gem 'sinatra-activerecord'
