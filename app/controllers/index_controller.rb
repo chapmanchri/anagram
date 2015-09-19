@@ -10,5 +10,20 @@ end
 
 post '/' do
   @word = params[:word]
-  redirect "/anagrams/#{@word}"
+  if three_letters?(@word)
+    redirect "/anagrams/#{@word}"
+  else
+    erb :index
+  end
+end
+
+def three_letters?(input)
+  puts "#{input.length} ***********************************"
+  if input.length <= 3 and input.length >= 1
+    puts "************************* input length ok"
+    return true
+  else
+    puts "************************* input length bad"
+    return false
+  end
 end
