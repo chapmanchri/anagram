@@ -13,7 +13,11 @@ post '/' do
   if valid_input?(@word)
     redirect "/anagrams/#{@word}"
   else
+    @error = "Dear Sir or Madam: words must have at least 1 character and no more than 3 characters AND not contain duplicate letters."
+      @word = params[:word]
     erb :index
+    # redirect "/"
+    # redirect "/people/#{person.id}"
   end
 end
 

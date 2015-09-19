@@ -52,3 +52,7 @@ p {
 	width: 100%;
 /*	background: purple;*/
 }
+.error-message {
+	margin: 20px;
+	color: blue;
+}
