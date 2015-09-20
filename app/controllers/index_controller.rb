@@ -9,23 +9,13 @@ get '/anagrams/:word' do
 end
 
 post '/' do
-  @word = params[:word]
-  if valid_input?(@word)
-    redirect "/anagrams/#{@word}"
-  else
-    @error = "Dear Sir or Madam: words must have at least 1 character and no more than 3 characters AND not contain duplicate letters."
-      @word = params[:word]
+  word = params[:word]
+  begin
+    valid_input?(word)
+    redirect "/anagrams/#{word}"
+  rescue Exception => error
+    @error = error.message
     erb :index
-    # redirect "/"
-    # redirect "/people/#{person.id}"
-  end
-end
-
-def three_letters?(input)
-  if input.length <= 3 and input.length >= 1
-    return true
-  else
-    return false
   end
 end
 
@@ -40,9 +30,7 @@ def distinct_letters?(input)
 end
 
 def valid_input?(input)
-  if three_letters?(input) && distinct_letters?(input)
-    true
-  else
-    false
+  if input.length > 3 or !distinct_letters?(input)
+    raise Exception.new("Word must be less than or equal to 3 characters AND all letters must be unique.")
   end
 end
