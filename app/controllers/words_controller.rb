@@ -3,6 +3,10 @@ get '/words' do
   erb :"/words/index"
 end
 
+get '/words/new' do
+  erb :"/words/new"
+end
+
 get '/words/:id' do
   id = params[:id]
   puts "***************************"
@@ -11,4 +15,15 @@ get '/words/:id' do
   puts @word.text
   puts "***************************"
   erb :"words/show"
+end
+
+post '/words' do
+  # "hello world post"
+  # word = params[:new_word]
+  # @word = Word.new(text: word)
+  # @word.save
+  # redirect "/words/#{@word.id}"
+  word = Word.create(text: params[:text])
+  redirect "/words/#{word.id}"
+  
 end
