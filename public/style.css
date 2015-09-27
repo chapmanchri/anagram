@@ -76,9 +76,7 @@ body {
 	margin: 20px;
 }
 
-p {
-	font-family:arial;
-}
+
 
 h1 {
 }
@@ -88,24 +86,23 @@ body {
 	font-family:'montserrat', arial;
 }
 
-h1 {
+h1.style-title {
     color: red;
 	margin: 20px;
 	font-weight: 900;
 	font-style: italic;
 }
 
-h2 {
+h2.style-sub {
     color: red;
 	margin: 20px;
 	font-weight: 500;
 }
 
-p {
-    color: gray;
-	margin: 20px;
-	font-style: italic;
-	font-weight: 100;
+p.big-words {
+	color: green;
+	font-weight: 900;
+	font-size: 1.5em;
 }
 
 .btn {
@@ -149,4 +146,3 @@ p {
 #anagram-list {
 	margin: 40px;
 }
-

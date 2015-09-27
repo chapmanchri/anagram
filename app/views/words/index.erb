@@ -1,15 +1,15 @@
-<h1>Words</h1>
+<h1 class="style-title">Words</h1>
 <table class="table table-striped">
 	<thead>
-		<th>Text</th>
-		<th>Letters</th>
+		<th><strong>Text</strong></th>
+		<th><strong>Letters</strong></th>
 	</thead>
 	<tbody>
 		
 		<% @words.each do |word| %>
 		
 			<tr>
-				<td><%= word.text %></td>
+				<td><a href='/words/<%= "#{word.id}" %>'><%= word.text %></a></td>
 				<td><%= word.letters %></td>
 			</tr>
 		
