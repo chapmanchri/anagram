@@ -35,12 +35,20 @@ end
 put '/words/:id' do
   word = Word.find(params[:id])
   
-  puts "****************tttt*****************"
+  puts "********ddd********tttt*****************"
   puts word.text
-  puts "***************tttt******************"  
+  puts "********ddd*******tttt******************"  
   
   word.text = params[:text]
   word.save
   redirect "/words/#{word.id}"
+end
+
+delete '/words/:id' do
+  puts "********ddd********tttt*****************"
+  puts "in delete"
+  puts "********ddd*******tttt******************" 
+    Word.find(params[:id]).destroy
+    redirect "/words"
 end
 

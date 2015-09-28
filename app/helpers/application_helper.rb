@@ -9,11 +9,6 @@ module ApplicationHelper
       # @action
   end
   
-  # def words_form_method(word)
-  #   # define the form method name here
-  #   @method = "post"
-  # end
-  
   def words_form_method(word)
     if word.new_record?
       @method = "post"
