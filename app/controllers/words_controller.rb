@@ -4,7 +4,17 @@ get '/words' do
 end
 
 get '/words/new' do
+  @word = Word.new
+  @word.text = "enter word here"
+  puts "*********************************"
+  puts @word.class
+  puts "*********************************"  
   erb :"/words/new"
+end
+
+get '/words/:id/edit' do
+  @word = Word.find(params[:id])
+  erb :"/words/edit"
 end
 
 get '/words/:id' do
@@ -18,12 +28,19 @@ get '/words/:id' do
 end
 
 post '/words' do
-  # "hello world post"
-  # word = params[:new_word]
-  # @word = Word.new(text: word)
-  # @word.save
-  # redirect "/words/#{@word.id}"
   word = Word.create(text: params[:text])
   redirect "/words/#{word.id}"
-  
 end
+
+put '/words/:id' do
+  word = Word.find(params[:id])
+  
+  puts "****************tttt*****************"
+  puts word.text
+  puts "***************tttt******************"  
+  
+  word.text = params[:text]
+  word.save
+  redirect "/words/#{word.id}"
+end
+

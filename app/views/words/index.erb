@@ -3,6 +3,7 @@
 	<thead>
 		<th><strong>Text</strong></th>
 		<th><strong>Letters</strong></th>
+		<th><strong>Edit</strong></th>
 	</thead>
 	<tbody>
 		
@@ -11,6 +12,7 @@
 			<tr>
 				<td><a href='/words/<%= "#{word.id}" %>'><%= word.text %></a></td>
 				<td><%= word.letters %></td>
+				<td><a href='/words/<%= "#{word.id}" %>/edit'>edit</a></td>
 			</tr>
 		
 		<% end %>
