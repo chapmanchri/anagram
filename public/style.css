@@ -48,15 +48,10 @@ input, select { vertical-align: middle; }
 
 
 /* Write your CSS styles here */
-body {
-}
 
 p {
 	font-family:arial;
-}
-
-p {
-font-size: 1em; /*starting number*/
+	font-size: 1em; /*starting number*/
 }
  
 p.sidenote {
@@ -72,14 +67,7 @@ h6 { font-size: .75em; }
 
 
 /* Write your CSS styles here */
-body {
-	margin: 20px;
-}
 
-
-
-h1 {
-}
 body {
 	background:#f8f8f8;
 	background:url('images/pattern.png');
@@ -88,14 +76,13 @@ body {
 
 h1.style-title {
     color: red;
-	margin: 20px;
+	margin-left: 0px;
 	font-weight: 900;
 	font-style: italic;
 }
 
 h2.style-sub {
     color: red;
-	margin: 20px;
 	font-weight: 500;
 }
 
@@ -125,9 +112,6 @@ p.big-words {
 	-webkit-appearance: none;
 }*/
 
-.form-box {
-	margin: 20px;
-}
 .form-space {
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -139,10 +123,17 @@ p.big-words {
 /*	background: purple;*/
 }
 .error-message {
-	margin: 20px;
+	margin: 0px;
 	color: blue;
 }
 
 #anagram-list {
-	margin: 40px;
+	margin: 0px;
+}
+
+.top-nav {
+	margin-left: 0px;
+}
+.get-anagram {
+	margin-left: 0px;
 }

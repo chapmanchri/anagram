@@ -4,6 +4,7 @@
 		<th><strong>Text</strong></th>
 		<th><strong>Letters</strong></th>
 		<th><strong>Edit</strong></th>
+		<th><strong>Delete</strong></th>
 	</thead>
 	<tbody>
 		
@@ -16,9 +17,7 @@
 				<td>
 		            <form action="/words/<%= "#{word.id}" %>" method="post">
 		              <input type="hidden" name="_method" value="DELETE" />
-		              <button class="btn btn-danger" type="submit">
-		                Delete
-		              </button>
+		              <button class="btn btn-danger" type="submit">Delete</button>
 		            </form>
 				</td>
 			</tr>
