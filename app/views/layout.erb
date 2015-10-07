@@ -2,26 +2,28 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" href="/style.css">
 		<link href="/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="/style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Anagram Generator</title>
 	</head>
 	
 	<body>
-		<div class="top-nav">
-			<ul class="nav nav-pills">
-			  <li role="presentation"><a href="/">Get an Anagram</a></li>
-			  <li role="presentation"><a href="/words">List Words</a></li>
-			  <li role="presentation"><a href="/words/new">Add a Word</a></li>
-			  <li role="presentation"><a href="/about">About</a></li>
-			</ul>
-		</div>
+		<div  class="container">
+			<div class="top-nav">
+				<ul class="nav nav-pills">
+				  <li role="presentation"><a href="/">Get an Anagram</a></li>
+				  <li role="presentation"><a href="/words">List Words</a></li>
+				  <li role="presentation"><a href="/words/new">Add a Word</a></li>
+				  <li role="presentation"><a href="/about">About</a></li>
+				</ul>
+			</div>
 		
-		<h1 class="style-title">Ye Old Anagram Generator</h1>
-		<div class="container">
-			<%= yield %>
+			<h1 class="style-title">Ye Old Anagram Generator</h1>
+			<div>
+				<%= yield %>
+			</div>
 		</div>
 	</body>
 </html>

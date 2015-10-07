@@ -59,7 +59,7 @@ font-size: 1em;
 }
  
 h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
+h2 { font-size: 1.7em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
 h5 { font-size: .83em; }
@@ -76,14 +76,16 @@ body {
 
 h1.style-title {
     color: red;
-	margin-left: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	font-weight: 900;
 	font-style: italic;
 }
 
-h2.style-sub {
+h2 {
     color: red;
 	font-weight: 500;
+	margin-bottom: 20px;
 }
 
 p.big-words {
@@ -97,7 +99,7 @@ p.big-words {
   font-family: Arial;
   color: #ffffff;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 10px 5px 10px;
   text-decoration: none;
   border: 0px;
   -webkit-appearance: none;
@@ -128,7 +130,8 @@ p.big-words {
 }
 
 #anagram-list {
-	margin: 0px;
+	margin: 40px;
+	color: red;
 }
 
 .top-nav {
@@ -136,4 +139,12 @@ p.big-words {
 }
 .get-anagram {
 	margin-left: 0px;
+}
+.inside-container {
+	margin-left: 15px;
+	margin-top: 20px;
+	
+}
+.container {
+
 }

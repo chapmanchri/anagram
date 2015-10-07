@@ -1,13 +1,15 @@
-<h1>Add a Word</h1>
+<div class="inside-container">
+	<h2>Add a Word</h2>
 
-<div class="new-error">
-	<!-- <p><%= @error %></p>
-	<p><%= @errors %></p> -->
-		<%= puts "hello hello" %>
-		<%= puts "#{@word.class}" %>
+	<div class="new-error">
+		<!-- <p><%= @error %></p>
+		<p><%= @errors %></p> -->
+			<%= puts "hello hello" %>
+			<%= puts "#{@word.class}" %>
+	</div>
+
+	<div class="new-person">
+		<%= erb :"/words/_form" %>
+	</div>
 </div>
-
-<div class="new-person">
-	<%= erb :"/words/_form" %>
-</div>
-
+<div class="page-bottom"></div>

@@ -1,28 +1,29 @@
-<h1 class="style-title">Words</h1>
-<table class="table table-striped">
-	<thead>
-		<th><strong>Text</strong></th>
-		<th><strong>Letters</strong></th>
-		<th><strong>Edit</strong></th>
-		<th><strong>Delete</strong></th>
-	</thead>
-	<tbody>
+<div class="inside-container">
+	<h2>Words in the Anagram Dictionary</h2>
+	<table class="table table-striped">
+		<thead>
+			<th><strong>Text</strong></th>
+			<th><strong>Letters</strong></th>
+			<th><strong>Edit</strong></th>
+			<th><strong>Delete</strong></th>
+		</thead>
+		<tbody>
 		
-		<% @words.each do |word| %>
+			<% @words.each do |word| %>
 		
-			<tr>
-				<td><a href='/words/<%= "#{word.id}" %>'><%= word.text %></a></td>
-				<td><%= word.letters %></td>
-				<td><a href='/words/<%= "#{word.id}" %>/edit'>edit</a></td>
-				<td>
-		            <form action="/words/<%= "#{word.id}" %>" method="post">
-		              <input type="hidden" name="_method" value="DELETE" />
-		              <button class="btn btn-danger" type="submit">Delete</button>
-		            </form>
-				</td>
-			</tr>
-		
-		<% end %>
+				<tr>
+					<td><a href='/words/<%= "#{word.id}" %>'><%= word.text %></a></td>
+					<td><%= word.letters %></td>
+					<td><a href='/words/<%= "#{word.id}" %>/edit'>edit</a></td>
+					<td>
+			            <form action="/words/<%= "#{word.id}" %>" method="post">
+			              <input type="hidden" name="_method" value="DELETE" />
+			              <button class="btn btn-danger" type="submit">Delete</button>
+			            </form>
+					</td>
+				</tr>
+			<% end %>
 
-	</tbody>
-</table>
+		</tbody>
+	</table>
+</div>
