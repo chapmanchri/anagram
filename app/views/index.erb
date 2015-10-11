@@ -5,18 +5,23 @@
 		<div class="error-message">
 			<%= @error %>
 		</div>
-			<div class="form-box">
-				<form action="/" method="post" class="form">
-					<div class="form-space">
-						<label for="word" style="color: gray">Enter a word:</label>
-						<input type="text" name="word" value="<%="#{@word}" %>"
-					</div>
-					<div class="form-space">
-						<input type="submit" class="btn" value="Make it happen">
-					</div>
-				</form>
-			</div>
+		
+		<div class="form-box">
+			<form action="/" method="post" class="form">
+				
+				<div class="form-space">
+					<label for="word">Enter a word:</label>
+					<input type="text" name="word" value="<%="#{@word}" %>">
+				</div>
+				
+				<div class="form-submit">
+					<input type="submit" class="btn" value="BOOM">
+				</div>
+				
+			</form>
+		</div>
+		
 	</div>
-	<div class="page-bottom">
-	</div>
+	
+	<div class="page-bottom"></div>
 </div>

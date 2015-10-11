@@ -58,7 +58,7 @@ p.sidenote {
 font-size: 1em;
 }
  
-h1 { font-size: 2em; }
+h1 { font-size: 3.5em; }
 h2 { font-size: 1.7em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
@@ -79,8 +79,8 @@ h1.style-title {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	font-weight: 900;
-	font-style: italic;
-}
+/*	font-style: italic;
+*/}
 
 h2 {
     color: red;
@@ -95,28 +95,50 @@ p.big-words {
 }
 
 .btn {
-  background: #d9344a;
-  font-family: Arial;
+  background: darkgreen;
+/*  font-family: Arial;*/
   color: #ffffff;
-  font-size: 20px;
-  padding: 5px 10px 5px 10px;
+  font-size: 12px;
+  padding: 3px 6px 6px 3px;
   text-decoration: none;
   border: 0px;
   -webkit-appearance: none;
+
+}
+
+
+.nav-pills a {
+    color: white;
+	background: darkblue;
+	font-size: 10px;
+	margin-top: 4px;
+}
+
+.nav-pills a:hover {
+    color: #560000;
+    border-radius: 0px;
+}
+
+.nav-pills .active a:hover {
+    color: #560000;
+    border-radius: 0px;
 }
 
 .btn:hover {
   background: #3cb0fd;
   text-decoration: none;
-}
+}*/
 
 /*.button {
 	-webkit-appearance: none;
 }*/
 
 .form-space {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.form-submit {
 	margin-top: 20px;
-	margin-bottom: 20px;
 }
 .page-bottom {
 	background:url('images/pattern2.png');
@@ -147,4 +169,14 @@ p.big-words {
 }
 .container {
 
+}
+h3 {
+	margin-bottom: 20px;
+}
+@font-face {
+    font-family: oldEnglish;
+    src: url(fonts/olde-english/OldeEnglish.ttf);
+}
+h1 {
+	font-family: oldEnglish;
 }
