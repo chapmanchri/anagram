@@ -1,10 +1,14 @@
+
+
 <div class="inside-container">
 	<div class="get-anagram">
 		<h2>Enter your word:</h2>
 		<h3>Three letter words only please...</h3>
-		<div class="error-message">
-			<%= @error %>
-		</div>
+		<% if @error %>
+			<div class="error-message" id="word-error">
+				<%= @error %>
+			</div>
+		<% end %>
 		
 		<div class="form-box">
 			<form action="/" method="post" class="form">

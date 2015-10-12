@@ -58,7 +58,7 @@ p.sidenote {
 font-size: 1em;
 }
  
-h1 { font-size: 3.5em; }
+h1 { font-size: 3.0em; }
 h2 { font-size: 1.7em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
@@ -149,6 +149,13 @@ p.big-words {
 .error-message {
 	margin: 0px;
 	color: blue;
+	padding: 12px;
+	margin: 0px 0 6px 0;
+	background: lightyellow;
+	border-style: dashed;
+	border-width: 2px;
+	width: 500px;
+	
 }
 
 #anagram-list {

@@ -33,7 +33,7 @@ def distinct_letters?(input)
 end
 
 def valid_input?(input)
-  if input.length > 3 or !distinct_letters?(input)
-    raise Exception.new("Word must be less than or equal to 3 characters AND all letters must be unique.")
+  if input.length > 3 or !distinct_letters?(input) or input.length == 0
+    raise Exception.new("Your word must be 1-3 characters in length AND all letters must be unique.")
   end
 end
