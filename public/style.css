@@ -188,8 +188,10 @@ h1 {
 	font-family: oldEnglish;
 }
 
-ul {
-	font-size: .95em; 
-	margin: 10px 0px 0px 20px;
+.about-tech {
+	margin: 10px 0 0 40px;
+}
+.about-text {
+	margin: 0 0 0 20px;
 }
 
