@@ -150,11 +150,11 @@ p.big-words {
 	margin: 0px;
 	color: blue;
 	padding: 12px;
-	margin: 0px 0 6px 0;
+	margin: 0px 0 20px 0;
 	background: lightyellow;
 	border-style: dashed;
 	border-width: 2px;
-	width: 500px;
+	width: 310px;
 	
 }
 
@@ -178,7 +178,7 @@ p.big-words {
 
 }
 h3 {
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 @font-face {
     font-family: oldEnglish;
@@ -187,3 +187,9 @@ h3 {
 h1 {
 	font-family: oldEnglish;
 }
+
+ul {
+	font-size: .95em; 
+	margin: 10px 0px 0px 20px;
+}
+
