@@ -3,7 +3,7 @@ get '/' do
 end
 
 get '/anagrams/:word' do
-  @word = params[:word]
+  @word = params[:word].downcase
   word_array = @word.chars.sort
   alphabetized_string = word_array.join
   # @anagrams = Word.find_anagrams(@word)
